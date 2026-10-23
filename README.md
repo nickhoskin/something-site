@@ -20,10 +20,10 @@ A static rebuild of something.global, made from a full-site backup. No CMS, no b
 
 ## Videos
 
-The backup didn't include the videos. They still stream from the original CloudFront
-(`d1r1uuahk21do6.cloudfront.net/assets/...`). If that account is closed, the videos will
-disappear and the still images will show instead. To make the archive fully self-contained,
-download the `.mp4` files into `media/video/` and update the `src` paths.
+The backup didn't include the videos, and the CloudFront they streamed from is offline (the AWS account is suspended).
+Pages now look for each video at `media/video/<folder>/<original filename>.mp4` (see `videos.txt` for the full list).
+Any video that is missing is hidden automatically and its still image shows instead.
+To restore them, drop the original files into those paths. No code changes needed.
 
 ## Viewing locally
 
