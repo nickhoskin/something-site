@@ -1,0 +1,5 @@
+/* TEAM */
+
+Creator: $SITE_NAME
+URL: https://something.global
+Description: 
